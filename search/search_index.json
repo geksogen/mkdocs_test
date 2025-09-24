@@ -1,1 +1,1 @@
-{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"hello/","title":"Hello","text":""},{"location":"hello/#hello","title":"Hello","text":"<p>this test page v1</p>"}]}
+{"config":{"indexing":"full","lang":["en"],"min_search_length":3,"prebuild_index":false,"separator":"[\\s\\-]+"},"docs":[{"location":"hello/","text":"Hello this test page v1","title":"Hello"},{"location":"hello/#hello","text":"this test page v1","title":"Hello"}]}
