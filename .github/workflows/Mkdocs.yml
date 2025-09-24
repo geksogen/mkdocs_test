@@ -3,11 +3,8 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'example-mkdocs/**'
 permissions:
   contents: write
-  pages: write
 
 jobs:
   deploy:
