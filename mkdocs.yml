@@ -1,20 +1,4 @@
-site_name: My Documentation
-site_url: https://example.com/docs/
-
-theme:
-  name: mkdocs # Or 'readthedocs', 'mkdocs', etc.
-  palette:
-    primary: deep purple
-    accent: indigo
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - search.highlight
-
+site_name: MkLorum
 nav:
   - Home: docs/index.md
-  
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+theme: readthedocs
