@@ -2,7 +2,7 @@ site_name: My Documentation
 site_url: https://example.com/docs/
 
 theme:
-  name: material # Or 'readthedocs', 'mkdocs', etc.
+  name: mkdocs # Or 'readthedocs', 'mkdocs', etc.
   palette:
     primary: deep purple
     accent: indigo
@@ -12,12 +12,8 @@ theme:
     - search.highlight
 
 nav:
-  - Home: index.md
-  - Guide:
-    - Introduction: guide/introduction.md
-    - Setup: guide/setup.md
-  - API: api.md
-
+  - Home: docs/index.md
+  
 markdown_extensions:
   - admonition
   - pymdownx.details
