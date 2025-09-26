@@ -28,6 +28,7 @@ jobs:
       # Генерация схемы инфраструктуры
       - name: Generate Infrastructure Diagram
         run: |
+          mkdir -p docs/diagrams/
           cd terraform
           terraform init
           terraform graph -type=plan | dot -Tsvg > ../docs/diagrams/infrastructure.svg
