@@ -17,6 +17,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      # Установка Terraform
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+
+      # Установка Graphviz
+      - name: Install Graphviz
+        run: sudo apt-get install -y graphviz
+
+      # Генерация схемы инфраструктуры
+      - name: Generate Infrastructure Diagram
+        run: |
+          cd terraform
+          terraform init
+          terraform graph -type=plan | dot -Tsvg > ../docs/diagrams/infrastructure.svg
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.9
